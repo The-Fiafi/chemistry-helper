@@ -1,3 +1,29 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+		"browser": true,
+		"es2021": true
+	},
+    "extends": [
+        "next/core-web-vitals"
+    ],
+    "parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},  
+    "plugins": ["import-rules-pack"],
+	"rules": {
+        "import-rules-pack/semicolon-after-import": "warn",
+        "import-rules-pack/import-combination": "warn",
+        "no-unused-vars": "warn",
+        "no-console": "warn",
+
+        "quotes": ["error", "double", {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+        }],
+        "jsx-quotes": ["error", "prefer-double"],
+
+        "no-mixed-spaces-and-tabs": "off",
+        "react/prop-types": "off"
+	}
 }

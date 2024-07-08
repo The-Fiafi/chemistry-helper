@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: white;
+}
+
+@mixin style-scroll-bar {
+    &::-webkit-scrollbar {
+        width: 5px;
+        
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #787878a9;
+    }
+}
+
+body {
+    background-color: #10100F;
+
+    overflow-x: hidden;
+
+    @include style-scroll-bar;
+}
+

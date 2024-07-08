@@ -1,0 +1,29 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 60px;
+
+    background-color: #202124;
+
+    box-shadow: 0px 5px 5px #202124;
+
+    .logo-section {
+        display: flex;
+        align-items: center;
+
+        margin-left: 10px;
+
+        h2 {
+            margin-left: 10px;
+
+            color: #B28734;
+        }
+    }
+}
+
+main {
+    margin-top: 65px;
+}
